@@ -6,3 +6,8 @@ function showMenu() {
     el.style.display = "none";
   }
 }
+
+function changeImageText(numb) {
+  const img = parent.document.getElementById("text-info");
+  img.src = "./content/text-" + numb + ".svg";
+}

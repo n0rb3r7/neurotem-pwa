@@ -19,7 +19,6 @@
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="styles.css" />
     <!-- <link rel="manifest" href="manifest.json" /> -->
-    <script src="./scripts.js"></script>
   </head>
   <body>
     <nav>
@@ -34,7 +33,7 @@
         </li>
         <li class="item">
           <img class="item-icon" src="./icons/home.svg" alt="neurotem-icon" /><a
-            href="#"
+            href="./index.html"
             >Home</a
           >
         </li>
@@ -82,8 +81,29 @@
       </ul>
     </nav>
     <div class="main">
-      <img class="temis-logo" src="./content/brain-scheme.svg" alt="" />
+      <div class="top-neurotem">
+        <img
+          class="top-neurotem-logo brain-1"
+          src="./content/neurotem.svg"
+          alt=""
+        />
+        <img
+          id="text-info"
+          class="text-info"
+          src="./content/text-1.svg"
+          alt="as"
+        />
+      </div>
+      <embed
+        class="brain-scheme"
+        type="image/svg+xml"
+        src="./content/brain-scheme.svg"
+      />
+
+      <!-- <img class="brain-scheme" src="./content/brain-scheme.svg" alt="" /> -->
     </div>
+    <script src="./scripts.js"></script>
+
     <script>
       if ("serviceWorker" in navigator) {
         navigator.serviceWorker.register("service-worker.js");

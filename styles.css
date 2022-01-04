@@ -46,13 +46,27 @@ nav {
 }
 
 .title-1 {
+  padding-top: 50%;
   width: 85%;
+  flex-grow: 1;
 }
 .start {
-  margin-top: 40%;
   width: 15vw;
 }
 .temis-logo {
-  margin-top: 80%;
   width: 25vw;
+  flex-grow: 1;
+}
+.brain-scheme {
+  margin-top: 10%;
+  width: 70vw;
+}
+.top-neurotem {
+  width: 80vw;
+}
+.top-neurotem-logo {
+  padding-bottom: 5vh;
+}
+.text-info {
+  width: 100%;
 }
