@@ -8,6 +8,17 @@ function showMenu() {
 }
 
 function changeImageText(numb) {
-  const img = parent.document.getElementById("text-info");
-  img.src = "./content/text-" + numb + ".svg";
+  const imgInfo = parent.document.getElementById("text-info");
+  imgInfo.src = "./content/text-" + numb + ".svg";
+  imgInfo.classList.add("animate");
+  setTimeout(function () {
+    imgInfo.classList.remove("animate");
+  }, 1000);
+
+  const imgNeurotem = parent.document.getElementById("neurotem-slides");
+  imgNeurotem.src = "./content/neurotem-" + numb + ".png";
+  imgNeurotem.classList.add("animate");
+  setTimeout(function () {
+    imgNeurotem.classList.remove("animate");
+  }, 1000);
 }
