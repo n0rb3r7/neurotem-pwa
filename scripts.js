@@ -13,12 +13,12 @@ function changeImageText(numb) {
   imgInfo.classList.add("animate");
   setTimeout(function () {
     imgInfo.classList.remove("animate");
-  }, 1000);
+  }, 2000);
 
   const imgNeurotem = parent.document.getElementById("neurotem-slides");
   imgNeurotem.src = "./content/neurotem-" + numb + ".png";
   imgNeurotem.classList.add("animate");
   setTimeout(function () {
     imgNeurotem.classList.remove("animate");
-  }, 1000);
+  }, 2000);
 }

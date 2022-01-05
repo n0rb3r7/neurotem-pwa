@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#79CDF0" />
-    <title>Neurotem</title>
+    <title>Neurotem PWA</title>
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -18,8 +18,7 @@
     />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="manifest" href="manifest.json" />
-    <script src="./scripts.js"></script>
+    <!-- <link rel="manifest" href="manifest.json" /> -->
   </head>
   <body>
     <nav>
@@ -43,32 +42,32 @@
             class="item-icon"
             src="./icons/aprobacion.svg"
             alt="neurotem-icon"
-          /><a href="./aprobacion.html">Aprobación</a>
+          /><a href="#">Aprobación</a>
         </li>
         <li class="item">
           <img
             class="item-icon"
             src="./icons/pediatrico.svg"
             alt="neurotem-icon"
-          /><a href="./pediatrico.html">Pediátrico</a>
+          /><a href="#">Pediátrico</a>
         </li>
         <li class="item">
           <img
             class="item-icon"
             src="./icons/presentaciones.svg"
             alt="neurotem-icon"
-          /><a href="./presentaciones.html">Presentaciones</a>
+          /><a href="#">Presentaciones</a>
         </li>
         <li class="item">
           <img
             class="item-icon"
             src="./icons/referencias.svg"
             alt="neurotem-icon"
-          /><a href="./referencias.html">Referencias</a>
+          /><a href="#">Referencias</a>
         </li>
         <li class="item">
           <img class="item-icon" src="./icons/foro.svg" alt="neurotem-icon" /><a
-            href="./foro-de-opinion.html"
+            href="#"
             >Foro de opinión</a
           >
         </li>
@@ -77,19 +76,34 @@
             class="item-icon"
             src="./icons/prospecto.svg"
             alt="neurotem-icon"
-          /><a href="./prospecto.html">Prospecto</a>
+          /><a href="#">Prospecto</a>
         </li>
       </ul>
     </nav>
     <div class="main">
-      <a class="title-1" href="./neurotem.html"
-        ><img src="./content/title-1.svg" alt=""
-      /></a>
-      <a class="start" href="./neurotem.html"
-        ><img src="./icons/start.svg" alt=""
-      /></a>
-      <img class="temis-logo" src="./content/temis-lostalo-logo.svg" alt="" />
+      <div class="top-neurotem">
+        <img
+          id="neurotem-slides"
+          class="top-neurotem-logo"
+          style="width: 100%"
+          src="./content/blank.png"
+          alt=""
+        />
+        <img
+          id="text-info"
+          class="text-info"
+          src="./content/blank-info.png"
+          alt="as"
+        />
+      </div>
+      <embed
+        class="brain-scheme"
+        type="image/svg+xml"
+        src="./content/brain-scheme.svg"
+      />
     </div>
+    <script src="./scripts.js"></script>
+
     <script>
       if ("serviceWorker" in navigator) {
         navigator.serviceWorker.register("service-worker.js");
