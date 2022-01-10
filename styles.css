@@ -94,10 +94,14 @@ nav {
   width: 100%;
 }
 .presentations {
-  max-height: 60vh;
+  max-height: 65vh;
   padding-top: 5vh;
-  padding-left: 10vw;
-  padding-right: 10vw;
+}
+.references {
+  background-color: white;
+  padding: 3vh;
+  margin: 3vh;
+  font-size: 0.5em;
 }
 .animate {
   -webkit-animation: fadein 1.2s linear forwards; /* Safari, Chrome and Opera > 12.1 */
