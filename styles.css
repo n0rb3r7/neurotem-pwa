@@ -7,13 +7,7 @@ body {
   background-position: top;
   font-family: "Open Sans", sans-serif;
 }
-.main {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+
 nav {
   z-index: 100;
   position: absolute;
@@ -43,6 +37,14 @@ nav {
 }
 .menu-close {
   padding-bottom: 20px;
+}
+.main {
+  height: 100vh;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .container {
   padding-left: 5%;
@@ -91,12 +93,18 @@ nav {
 .text-info {
   width: 100%;
 }
+.presentations {
+  max-height: 60vh;
+  padding-top: 5vh;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
 .animate {
-  -webkit-animation: fadein 2s linear forwards; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 2s linear forwards; /* Firefox < 16 */
-  -ms-animation: fadein 2s linear forwards; /* Internet Explorer */
-  -o-animation: fadein 2s linear forwards; /* Opera < 12.1 */
-  animation: fadein 2s linear forwards;
+  -webkit-animation: fadein 1.2s linear forwards; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 1.2s linear forwards; /* Firefox < 16 */
+  -ms-animation: fadein 1.2s linear forwards; /* Internet Explorer */
+  -o-animation: fadein 1.2s linear forwards; /* Opera < 12.1 */
+  animation: fadein 1.2s linear forwards;
 }
 @keyframes fadein {
   from {
