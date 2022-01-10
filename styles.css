@@ -103,6 +103,12 @@ nav {
   margin: 3vh;
   font-size: 0.5em;
 }
+.video-link {
+  padding-top: 3vh;
+}
+.video {
+  max-width: 60vw;
+}
 .animate {
   -webkit-animation: fadein 1.2s linear forwards; /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 1.2s linear forwards; /* Firefox < 16 */
